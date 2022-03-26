@@ -1,1 +1,35 @@
 /* Vou adicionar os estilos depois */
+:root{
+    --cor-1: #704000;
+    --cor-fundo: #ffa319d8;
+    --cor-header: #005DA3;
+    --cor-footer: #A36200;
+    --cor-5: #BD6B00;
+    --font-texto: "Roboto", sans-serif;
+    --font-header: "Lora", serif;
+}
+
+*, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--cor-header);
+}
+
+header > h1, p{
+    font-family: var(--font-header);
+    color: antiquewhite;
+}
+
+main > article{
+    font-family: var(--font-texto);
+    background-color: var(--cor-fundo);
+    color: rgb(7, 7, 7);
+}
+
+footer{
+    background-color: var(--cor-footer);
+    color: antiquewhite;
+}
