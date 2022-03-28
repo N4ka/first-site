@@ -1,35 +1,108 @@
-/* Vou adicionar os estilos depois */
 :root{
-    --cor-1: #704000;
-    --cor-fundo: #ffa319d8;
-    --cor-header: #005DA3;
-    --cor-footer: #A36200;
-    --cor-5: #BD6B00;
+    --cor-header: #0B2470;
+    --cor-nav: #06143D;
+    --cor-body: #4B68BD;
+    --cor-main: #364B88;
+    --cor-footer: #06143D;
     --font-texto: "Roboto", sans-serif;
     --font-header: "Lora", serif;
+    --paragrafo-spc: 15px;
 }
 
-*, *::before{
+*{
     margin: 0;
     padding: 0;
 }
 
 header{
     background-color: var(--cor-header);
+    padding-bottom: 7px;
 }
 
 header > h1, p{
     font-family: var(--font-header);
     color: antiquewhite;
+    text-indent: var(--paragrafo-spc);
 }
 
-main > article{
+nav{
+    position: sticky;
+    top: 0%;
+    background-color: var(--cor-nav);
+    z-index: 1;
+}
+
+nav > a{
+    padding-left: 10.5%;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: var(--font-header);
+    font-weight: 800;
+    font-size: large;
+}
+
+body{
+    background-color: var(--cor-body);
+}
+
+main{
+    width: 600px;
+    background-color: #364a8893;
+    border: 2px solid --cor-main;
+    border-radius: 25px;
+    box-shadow: 3px 3px 15px var(--cor-nav);
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+main > article > p{
     font-family: var(--font-texto);
-    background-color: var(--cor-fundo);
-    color: rgb(7, 7, 7);
+    color: antiquewhite;
+    padding: 5px 12px;
+}
+
+#title-artc1{
+    font-family: var(--font-texto);
+    padding-left: 33%;
+}
+
+#title-artc2{
+    font-family: var(--font-texto);
+    padding-left: 35.8%;
+}
+
+img{
+    width: 150px;
+    position: relative;
+    left: 33.5%;
+}
+
+aside{
+    font-style: italic;
+    text-indent: var(--paragrafo-spc);
+    padding: 5px 12px;
+    color: #06143D;
+}
+
+aside > p{
+    outline: 2px solid black;
+}
+
+#video1, #video2{
+    margin-top: 2.5%;
+    padding: 5px 20px;
 }
 
 footer{
     background-color: var(--cor-footer);
     color: antiquewhite;
+}
+
+footer > p{
+    text-align: center;    
+}
+
+#link-footer{
+    color: #4B68BD;
 }
