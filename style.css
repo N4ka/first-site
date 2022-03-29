@@ -46,7 +46,6 @@ body{
 }
 
 main{
-    width: 600px;
     background-color: #364a8893;
     border: 2px solid --cor-main;
     border-radius: 25px;
@@ -105,4 +104,82 @@ footer > p{
 
 #link-footer{
     color: #4B68BD;
+}
+
+@media (min-width: 320px) and (min-height: 568px)
+{
+    header{
+        font-size: 15px;
+        padding: 2% 0;
+    }
+
+    nav > a{
+        padding: 5% 0;
+        margin: 3% 5%;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    #title-artc1{
+        padding: 0 55%;
+    }
+
+    #title-artc2{
+        padding: 0 25%;
+    }
+
+    img{
+        left: 23.5%;
+    }
+
+    #video1, #video2{
+        position: relative;
+        left: 18%;
+    }
+}
+
+@media (max-width: 2560px) and (max-height: 1440px)
+{
+    header{
+        width: 100%;
+    }
+
+    nav{
+        padding: .8% 0;
+    }
+
+    nav a{
+        font-weight: 900;
+        font-size: larger;
+    }
+
+    main{
+        width: 85%;
+    }
+
+    #title-artc1, #title-artc2{
+        padding: 0% 33%;
+    }
+
+    img{
+        padding: 0 8.9%;
+    }
+
+    main > article > p{
+        font-weight: 600;
+        font-size: large;
+    }
+
+    aside{
+        font-weight: 700;
+        font-size: larger;
+    }
+
+    #video1, #video2{
+        width: 55%;
+        padding-left: 1.5%;
+        margin-bottom: .8%;
+    }
 }
